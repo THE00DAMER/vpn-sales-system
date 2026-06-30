@@ -31,7 +31,7 @@ Follow these steps to set up the project on your local machine or server.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/atlas-vpn.git
+[git clone https://github.com/yourusername/atlas-vpn.git](https://github.com/THE00DAMER/vpn-sales-system.git)
 cd atlas-vpn
 ```
 
