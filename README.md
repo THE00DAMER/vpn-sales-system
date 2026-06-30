@@ -18,7 +18,18 @@ A full-stack solution for managing VPN subscriptions, customers, and support tic
 - **Backend:** Node.js, Express, TypeScript
 - **Database:** Local JSON File Storage (Easily migratable to SQLite/PostgreSQL)
 
-## 🛠️ Installation Guide
+## ⚡ Quick Installation (Recommended)
+
+We provide an automated installation script that handles dependencies, environment setup, and bot configuration.
+
+```bash
+git clone https://github.com/yourusername/atlas-vpn.git
+cd atlas-vpn
+chmod +x install.sh
+./install.sh
+```
+
+## 🛠️ Manual Installation Guide
 
 Follow these steps to set up the project on your local machine or server.
 
@@ -31,7 +42,7 @@ Follow these steps to set up the project on your local machine or server.
 ### 1. Clone the Repository
 
 ```bash
-[git clone https://github.com/yourusername/atlas-vpn.git](https://github.com/THE00DAMER/vpn-sales-system.git)
+git clone https://github.com/yourusername/atlas-vpn.git
 cd atlas-vpn
 ```
 
@@ -80,6 +91,20 @@ After building, start the production server:
 
 ```bash
 npm start
+```
+
+## 🔧 Troubleshooting
+
+### Tailwind CSS Native Binding Error (`@tailwindcss/oxide`)
+If you encounter the following error during installation or build:
+```
+Error: Cannot find native binding. npm has a bug related to optional dependencies...
+```
+This is a known `npm` bug on some servers. To fix it, run the following commands:
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
 ```
 
 ## 📚 Bot Configuration
